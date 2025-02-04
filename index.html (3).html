@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content ="width=device-width,initial-scale=1.0">
+<title>responsive e-commerce website design </title>
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<!--custum css file link-->
+<link rel ="stylesheet" href="style.css">
+</head>
+<body>
+   <!--header section-->
+   <header>
+   
+    <a href="#" class="logo">Shopy<span>.</span></a>
+    <nav class="navbar">
+       <a class="active" href="my project.html">Home</a>
+        <a href="#about us">About Us</a>
+       <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="icons">
+        <i  class="fas fa-bars"id="menu-bars"></i>
+        <i  class="fas fa-search"id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <!--<a href="#" class="fas fa-user"></a>-->
+       
+    </div>
+   </header>
+   <!--search form-->
+   <form action="" id="search-form">
+    <input type="search" placeholder="search here..."" name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+   </form>
+   <section id="prodetails"class="section-p1"> 
+    <div class="single-pro-image">
+        <img src="C:\Users\pc-sham\Desktop\main project\home\172612737876ea8ebe72591870a7f3f8080a40c8d4_thumbnail_405x552.jpg"  width="100%" id="mainimg" alt="">
+    <div class="small-img-group">
+        <div class="small-img-col">
+            <img src="C:\Users\pc-sham\Desktop\main project\home\172612737876ea8ebe72591870a7f3f8080a40c8d4_thumbnail_405x552.jpg"width="100%"class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="C:\Users\pc-sham\Desktop\main project\home\17162598438b515b0ff35006bca658016f06a6a75f_thumbnail_720x.jpg" width="100%"class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="C:\Users\pc-sham\Desktop\main project\home\1712458319e7e1952afe29aa3e8432dc97e955b0f4_thumbnail_720x.jpg"width="100%"class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="C:\Users\pc-sham\Desktop\main project\home\1701170237f51c8988b069d6f0e9c978c06b0e4c14_thumbnail_405x552.jpg" width="100%"class="small-img" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="single-pro-details">
+     <h3>Home/blouse </h3>
+     <h4>Men's fashion blouse</h4>
+     <h2>$53.00</h2>
+     <select>
+        <option>Select Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XL</option>
+        <option>XXL</option>
+     </select>
+     <input type="number" value="1">
+     <button class="normal">Add To Cart</button>
+     <h4>product Details</h4>
+     <span>manifinity homme men's  summer pattern print short sleeve casual polo shirt for commute and lisure</span>
+    </div>
+   </section>
+   <footer class="section-p1">
+    <div class="col">
+     <a href="#" class="logo">Shopy<span>.</span></a>
+     <h4>Contact</h4>
+     <p><strong>Phone:</strong>+01 4342 421 /+964 8294 492</p>
+     <div class="follow">
+       <h4>Follow Us</h4>
+       <div class="icon">
+         <i class="fab fa-facebook-f"></i>
+         <i class="fab fa-instagram"></i>
+         <i class="fab fa-tiktok"></i>
+       </div>
+     </div>
+    </div>
+    <div class="col">
+     <h4>My Account</h4>
+     <a href="#">Sign In</a>
+     <a href="#">View Cart</a>
+     <a href="#">My Wishlist</a>
+     <a href="#">Track My Order</a>
+     <a href="#">Help</a>
+    </div>
+    <div class="col install">
+     <h4>Install App</h4> 
+     <p>Click on this button to open the application </p>
+     
+     <br>
+     <p>Secured Payment Gateways</p>
+     <img src="C:\Users\pc-sham\Desktop\main project\home\تنxffزيل.jpg">
+    </div>
+    <div class="copyright">
+     <p>Our commercial website was created on 10/11/2024</p>
+    </div>
+    </footer>
+    <script>
+        var mainimg=document.getElementById("mainimg");
+        var smallimg=document.getElementsByClassName("small-img");
+        smallimg[0].onclick=function(){
+            mainimg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick=function(){
+            mainimg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick=function(){
+            mainimg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick=function(){
+            mainimg.src=smallimg[3].src;
+        }
+
+    </script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+   <!-- custom js file link-->
+  <script src="script.js"></script>
+</body>
+</html>
